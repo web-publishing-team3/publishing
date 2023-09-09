@@ -1,1 +1,70 @@
 /* header, footer 공동 css */
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  --skyBlue: #03c3fe;
+}
+
+.header {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.headerLogoDiv {
+  width: 25%;
+  padding-left: 50px;
+}
+
+/* 헤더 메뉴 */
+.headerMenuDiv {
+  width: 50%;
+  height: 100%;
+  margin-left: -48px;
+}
+
+.headerMenuItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.headerMenuItem {
+  margin: 0 30px;
+}
+
+.headerMenuItem > a {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* 헤더 로그인 버튼 */
+.headerLoginDiv {
+  margin-right: 57px;
+}
+
+.headerBtnLogin {
+  width: 76px;
+  height: 26px;
+  background-color: var(--skyBlue);
+  border: none;
+  border-radius: 16px;
+}
+
+.headerBtnLogin > p {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+}
