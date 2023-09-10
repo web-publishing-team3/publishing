@@ -1,0 +1,156 @@
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main > div {
+  display: flex;
+  justify-content: center;
+}
+
+.mainBanner {
+  width: 100%;
+  height: 45vw;
+  position: relative;
+}
+
+.mainBannerIcon {
+  width: 91.5vw;
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 19vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainBannerIconDiv {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  margin-top: -14px;
+  margin-left: -37px;
+}
+
+.mainBannerIconDiv:hover {
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.mainBannerIcon > span {
+  color: #ccc;
+  font-size: 5vw;
+}
+
+.checkDiv {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 20.2vw;
+  left: 40.3vw;
+}
+
+.checkDiv > div {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  z-index: 1;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.mainInnerBanner1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../assets/img/main_banner1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+}
+
+.mainBannerInput1 {
+  width: 500px;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12.2vw;
+}
+
+.mainBannerInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8.4vw;
+}
+
+.mainBannerText1P {
+  font-size: 2.2vw;
+  color: #00a8ff;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.mainBannerText1H1 {
+  font-size: 3.1vw;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.mainBannerText1H3 {
+  font-size: 2.2vw;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.mainBannerBtn {
+  width: 15.6vw;
+  height: 3.3vw;
+  background: linear-gradient(to right, #03c3fe, #00a8ff);
+  border-radius: 32px;
+  margin-top: 4.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.mainBannerBtn > span {
+  font-size: 20px;
+}
+
+/* 왼쪽 화살표 */
+.arrowLeft::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(225deg);
+  margin: 0 -1vw;
+}
+
+/* 오른쪽 화살표 */
+.arrowRight::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+  margin: 0 88vw;
+}
