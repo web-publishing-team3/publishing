@@ -310,9 +310,6 @@ img {
   margin-bottom: 29px;
 }
 
-.imgBox1 {
-}
-
 .imgBox2 {
   display: flex;
   width: 493px;
@@ -327,9 +324,6 @@ img {
   align-self: flex-end;
   justify-content: flex-end;
   align-items: flex-end;
-}
-
-.imgBox4 {
 }
 
 .imgOff {
