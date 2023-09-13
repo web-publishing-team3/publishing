@@ -1,0 +1,36 @@
+.main {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 85px auto;
+}
+.main > div {
+  display: flex;
+  justify-content: center;
+}
+.sectionFunction > div {
+  display: block;
+}
+
+.titileFunction {
+  display: block;
+  color: var(--skyBlue);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.titleInfo {
+  font-size: 30px;
+  font-weight: 800;
+}
+/* .functionInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.functionBox {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+} */
