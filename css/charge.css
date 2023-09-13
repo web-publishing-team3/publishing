@@ -1,0 +1,189 @@
+.center {
+  padding: 0 146px;
+}
+
+main > .topDiv {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+main > .topDiv > .center > p {
+  color: #03c3fe;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main > .middleDiv > .center > .h3Div {
+  padding-bottom: 100px;
+}
+
+main > .middleDiv > .center > .h3Div > h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*--------table--------*/
+main > .middleDiv > .center > .tableDiv {
+  padding-bottom: 53px;
+}
+
+main > .middleDiv > .center > .tableDiv > table {
+  width: 100%;
+}
+
+main > .middleDiv > .center > .tableDiv > table table {
+  width: 100%;
+  text-align: center;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr th {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+main > .middleDiv > .center > .tableDiv .thead tr th {
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+main > .middleDiv > .center > .tableDiv .thead tr td {
+  justify-content: flex-start;
+  padding-left: 40px;
+  text-align: left;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr td {
+  height: 45px;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr:nth-child(2n) td {
+  background-color: #f8f8f8;
+}
+
+/*--------underBox--------*/
+main > .underDiv {
+  background-color: #f2f2f2;
+  padding: 100px 0 70px;
+}
+
+main > .underDiv > .center > .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > .underDiv > .center > .box > .inBox {
+  width: 400px;
+  background-color: white;
+  padding: 60px 25px 40px;
+}
+
+main > .underDiv > .center > .box > .inBox > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+main > .underDiv > .center > .box > .inBox > h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #03c3fe;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+main > .underDiv > .center > .box > .inBox > h6 {
+  text-align: right;
+  margin-bottom: 13px;
+  height: 45px;
+}
+
+main > .underDiv > .center > .box > .inBox > h6 > span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+main > .underDiv > .center > .box > .inBox > h2 > span {
+  font-size: 20px;
+}
+
+main > .underDiv > .center > .box > .inBox > h5 {
+  line-height: 24px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 30px;
+}
+
+main > .underDiv > .center > .box > .inBox > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/*--------footer--------*/
+footer {
+  height: 150px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+footer > .center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > .center > .footerTop {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+footer > .center > .footerTop > p {
+  line-height: 2;
+}
+
+footer > .center > .footerTop > p > a {
+  margin-right: 30px;
+}
+
+footer > .center > .footerTop > p > b {
+  margin-right: 4px;
+}
+
+footer > .center > .footerBottom {
+  display: flex;
+  align-items: center;
+}
+
+footer > .center > .footerBottom > div > a {
+  font-size: 14px;
+}
+
+footer > .center > .footerBottom > .btn1 > a {
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+footer > .center > .footerBottom > .btn2 {
+  width: 130px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+}
+
+footer > .center > .footerBottom > .btn2:hover {
+  background-color: #03c3fe;
+}
+
+footer > .center > .footerBottom > .btn2 > a:hover {
+  color: white;
+}
