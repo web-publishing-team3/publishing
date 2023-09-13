@@ -1,9 +1,806 @@
+<!--
+  서비스 요금 page
+  author : 신희범
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>서비스 요금</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/charge.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <title>협업툴 팀업</title>
   </head>
-  <body></body>
+  <body>
+    <!------header------>
+    <header class="header">
+      <div class="innerHeader headerLogoDiv">
+        <img src="http://placehold.it/100x50" alt="dummyImg" />
+      </div>
+      <div class="innerHeader headerMenuDiv">
+        <ul class="headerMenuItems">
+          <li class="headerMenuItem"><a href="#">제품 소개</a></li>
+          <li class="headerMenuItem"><a href="#">서비스 요금</a></li>
+          <li class="headerMenuItem"><a href="#">고객사례</a></li>
+          <li class="headerMenuItem"><a href="#">다운로드</a></li>
+          <li class="headerMenuItem"><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="innerHeader headerLoginDiv">
+        <button type="button" class="headerBtnLogin" id="headerBtnLogin">
+          <p>LOGIN &rarr;</p>
+        </button>
+      </div>
+    </header>
+    <!------main------>
+    <main>
+      <div class="topDiv">
+        <div class="center">
+          <p>서비스 요금</p>
+        </div>
+      </div>
+      <div class="middleDiv">
+        <div class="center">
+          <div class="h3Div">
+            <h3>
+              팀업은 고객사에 최적화된 협업 시스템을 디자인하여 차별화된 가치를
+              제공합니다.
+            </h3>
+          </div>
+          <div class="tableDiv">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <table class="thead">
+                      <tbody>
+                        <tr>
+                          <th>유형</th>
+                        </tr>
+                        <tr>
+                          <td>요금</td>
+                        </tr>
+                        <tr>
+                          <td>사용인원</td>
+                        </tr>
+                        <tr>
+                          <td>1인별 용량</td>
+                        </tr>
+                        <tr>
+                          <td>1회당 업로드 용량</td>
+                        </tr>
+                        <tr>
+                          <td>주제 별 그룹피드</td>
+                        </tr>
+                        <tr>
+                          <td>1:1 / 그룹 대화</td>
+                        </tr>
+                        <tr>
+                          <td>대용량 파일 P2P 전송</td>
+                        </tr>
+                        <tr>
+                          <td>트리구조 조직도 제공</td>
+                        </tr>
+                        <tr>
+                          <td>통합검색</td>
+                        </tr>
+                        <tr>
+                          <td>외부 사용자 초대</td>
+                        </tr>
+                        <tr>
+                          <td>관리자 페이지</td>
+                        </tr>
+                        <tr>
+                          <td>멀티 플랫폼<br />(윈도우, 맥, iOS, Android)</td>
+                        </tr>
+                        <tr>
+                          <td>오픈 API 지원</td>
+                        </tr>
+                        <tr>
+                          <td>챗봇(Chat-Bot) 개발 지원</td>
+                        </tr>
+                        <tr>
+                          <td>커스터마이징</td>
+                        </tr>
+                        <tr>
+                          <td>기술지원 및 전문 인력 파견</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th><span>SaaS</span>스탠다드</th>
+                        </tr>
+                        <tr>
+                          <td>무료</td>
+                        </tr>
+                        <tr>
+                          <td>50명 이하</td>
+                        </tr>
+                        <tr>
+                          <td>5GB 이하</td>
+                        </tr>
+                        <tr>
+                          <td>100MB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="barOff"
+                              src="../assets/img/bar_off.png"
+                              alt="bar_off"
+                            />
+                            <img
+                              class="barOn"
+                              src="../assets/img/bar_on.png"
+                              alt="bar_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="barOff"
+                              src="../assets/img/bar_off.png"
+                              alt="bar_off"
+                            />
+                            <img
+                              class="barOn"
+                              src="../assets/img/bar_on.png"
+                              alt="bar_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th><span>SaaS</span>프리미엄</th>
+                        </tr>
+                        <tr>
+                          <td>4500원/월 부터</td>
+                        </tr>
+                        <tr>
+                          <td>결제한 인원 만큼 사용</td>
+                        </tr>
+                        <tr>
+                          <td>30GB</td>
+                        </tr>
+                        <tr>
+                          <td>2GB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="barOff"
+                              src="../assets/img/bar_off.png"
+                              alt="bar_off"
+                            />
+                            <img
+                              class="barOn"
+                              src="../assets/img/bar_on.png"
+                              alt="bar_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="barOff"
+                              src="../assets/img/bar_off.png"
+                              alt="bar_off"
+                            />
+                            <img
+                              class="barOn"
+                              src="../assets/img/bar_on.png"
+                              alt="bar_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th><span>On-Premise</span>구축형</th>
+                        </tr>
+                        <tr>
+                          <td>별도문의</td>
+                        </tr>
+                        <tr>
+                          <td>500User 이상</td>
+                        </tr>
+                        <tr>
+                          <td>설정가능</td>
+                        </tr>
+                        <tr>
+                          <td>설정가능</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <img
+                              class="checkOff"
+                              src="../assets/img/check_off.png"
+                              alt="check_off"
+                            />
+                            <img
+                              class="checkOn"
+                              src="../assets/img/check_on.png"
+                              alt="check_on"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="underDiv">
+        <div class="center">
+          <div class="box">
+            <div class="inBox">
+              <h3>SaaS<br />스탠다드</h3>
+              <h2>무료</h2>
+              <h6>1인/1개월</h6>
+              <h5>
+                50명 이하 5GB까지는 무료로 이용 가능한 <br />스탠다드를
+                추천드립니다.
+              </h5>
+              <div>
+                <p>사용인원</p>
+                <p>Max 50명</p>
+              </div>
+              <div>
+                <p>팀 총용량</p>
+                <p>1인당 용량의 합</p>
+              </div>
+              <div>
+                <p>팀별 1인 용량</p>
+                <p>5GB</p>
+              </div>
+              <div>
+                <p>개별 업로드 용량</p>
+                <p>100MB</p>
+              </div>
+            </div>
+            <div class="inBox">
+              <h3>SaaS <br />프리미엄</h3>
+              <h2>4,500원<span> / 월</span></h2>
+              <h6>1인/1개월<br /><span>자동/1년 단일결제 시</span></h6>
+              <h5>
+                1인 30GB의 넉넉한 용량을 제공합니다.<br />(1개월 단일 결제 시
+                멤버당 5,000원/월)
+              </h5>
+              <div>
+                <p>사용인원</p>
+                <p>과금인원</p>
+              </div>
+              <div>
+                <p>팀 총용량</p>
+                <p>1인당 용량의 합</p>
+              </div>
+              <div>
+                <p>팀별 1인 용량</p>
+                <p>30GB</p>
+              </div>
+              <div>
+                <p>개별 업로드 용량</p>
+                <p>2GB</p>
+              </div>
+            </div>
+            <div class="inBox">
+              <h3>On-Premise<br />구축형</h3>
+              <h2>별도문의</h2>
+              <h6>커스텀마이징 형태</h6>
+              <h5>
+                기업의 필요에 맞춰 기능을 추가하거나<br />디자인할 수 있습니다.
+              </h5>
+              <div>
+                <p>사용인원</p>
+                <p>500User 이상</p>
+              </div>
+              <div>
+                <p>팀 총용량</p>
+                <p>설정가능</p>
+              </div>
+              <div>
+                <p>팀별 1인 용량</p>
+                <p>설정가능</p>
+              </div>
+              <div>
+                <p>개별 업로드 용량</p>
+                <p>설정가능</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!------footer------>
+    <footer>
+      <div class="center">
+        <div class="footerTop">
+          <p>
+            (주) 이스트소프트 서울시 서초구 반포대로 3 이스트빌딩 (우) 06711
+          </p>
+          <p>
+            <b>Tel</b>
+            <a href="#">02-3470-2903</a>
+            <b>E-mail</b>
+            <a href="#">help@tmup.com</a>
+          </p>
+        </div>
+        <div class="footerBottom">
+          <div class="btn1">
+            <a href="#">공지사항</a>
+            <a href="#">고객지원</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+          </div>
+          <div class="btn2">
+            <a>Family Site +</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
