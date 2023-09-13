@@ -1,7 +1,3 @@
-.center {
-  padding: 0 146px;
-}
-
 main > .topDiv {
   padding-top: 100px;
   padding-bottom: 20px;
@@ -123,67 +119,4 @@ main > .underDiv > .center > .box > .inBox > div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-/*--------footer--------*/
-footer {
-  height: 150px;
-  border-top: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-}
-
-footer > .center {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer > .center > .footerTop {
-  font-size: 11px;
-  font-weight: bold;
-}
-
-footer > .center > .footerTop > p {
-  line-height: 2;
-}
-
-footer > .center > .footerTop > p > a {
-  margin-right: 30px;
-}
-
-footer > .center > .footerTop > p > b {
-  margin-right: 4px;
-}
-
-footer > .center > .footerBottom {
-  display: flex;
-  align-items: center;
-}
-
-footer > .center > .footerBottom > div > a {
-  font-size: 14px;
-}
-
-footer > .center > .footerBottom > .btn1 > a {
-  margin-right: 20px;
-  font-size: 13px;
-}
-
-footer > .center > .footerBottom > .btn2 {
-  width: 130px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e5e5e5;
-}
-
-footer > .center > .footerBottom > .btn2:hover {
-  background-color: #03c3fe;
-}
-
-footer > .center > .footerBottom > .btn2 > a:hover {
-  color: white;
 }
