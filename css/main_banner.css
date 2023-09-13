@@ -1,0 +1,427 @@
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main > div {
+  display: flex;
+  justify-content: center;
+}
+
+.mainBanner {
+  width: 100%;
+  height: 45vw;
+  position: relative;
+}
+
+/* 화살표 및 베너 순번 표시 아이콘 */
+.mainBannerIcon {
+  width: 91vw;
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 19vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2vw;
+}
+
+.mainBannerIconDiv {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  margin-top: -14px;
+  margin-left: -2.5vw;
+}
+
+.mainBannerIconDiv:hover {
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* 마우스 오버 시 화살표 색 변경 */
+.mainBannerIconDiv:hover .arrowLeft::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-top: 2px solid #03c3fe;
+  border-right: 2px solid #03c3fe;
+  transform: rotate(225deg);
+  margin: 0 -1vw;
+}
+
+/* 마우스 오버 시 화살표 색 변경 */
+.mainBannerIconDiv:hover .arrowRight::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-top: 2px solid #03c3fe;
+  border-right: 2px solid #03c3fe;
+  transform: rotate(45deg);
+  margin: 0 88vw;
+}
+
+.mainBannerIcon > span {
+  color: #ccc;
+  font-size: 5vw;
+}
+
+.checkDiv {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 20.2vw;
+  left: 40.3vw;
+}
+
+.checkDiv > div {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  z-index: 1;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.checkDiv > div:hover {
+  cursor: pointer;
+}
+
+#checkDivIn1 {
+  background-color: #03c3fe;
+}
+
+/* 베너 아이콘 끝 */
+
+/* 메인 베너 1 */
+.mainInnerBanner1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../assets/img/main/main_banner1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+}
+
+.mainBannerInput1 {
+  width: 50%;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6vw;
+}
+
+.mainBannerInnerItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10.4vw;
+}
+
+.mainBannerText1P {
+  font-size: 1.6vw;
+  color: #00a8ff;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.mainBannerText1H1 {
+  font-size: 3.1vw;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.mainBannerText1H3 {
+  font-size: 1.6vw;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.mainBannerBtn {
+  width: 15.6vw;
+  height: 3.3vw;
+  background: linear-gradient(to right, #03c3fe, #00a8ff);
+  border-radius: 32px;
+  margin-top: 4.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 101;
+}
+
+.mainBannerBtn:hover {
+  cursor: pointer;
+}
+
+.mainBannerBtn > p {
+  position: absolute;
+  left: 30%;
+}
+
+.mainBannerBtn > span {
+  position: absolute;
+  font-size: 1.4vw;
+  margin-left: 20%;
+  top: 1.1vw;
+}
+
+.mainBannerBtn:hover > .btnSpan {
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(10%);
+  top: 1.1vw;
+  margin-left: 20%;
+  font-size: 1.4vw;
+  animation: modifyarrow 1s linear infinite;
+}
+
+@keyframes modifyarrow {
+  50% {
+    transform: translate(12px, 0);
+  }
+}
+
+/* 메인 베너 1 끝 */
+
+/* 메인 베너 2 */
+.mainInnerBanner2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../assets/img/main/main_banner4.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+}
+
+.leftTextBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 0 9.5vw;
+}
+
+.mainBannerInnerItem2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+
+.textBox2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBox2 > h3 {
+  font-size: 2.2vw;
+  color: #00a6ff;
+  font-weight: bold;
+  margin-bottom: 1.7vw;
+}
+
+.textBox2 > h1 {
+  font-size: 3.1vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.rightImgBox {
+  display: flex;
+  align-items: center;
+}
+
+/* 베너 이미지 */
+.mainBannerImg {
+  width: 41.36vw;
+  height: auto;
+}
+
+/* 메인 베너2 끝 */
+
+img {
+  overflow: clip;
+  overflow-clip-margin: content-box;
+}
+
+/* 메인 베너 3 */
+
+.mainInnerBanner3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(../assets/img/main-banner3/banner3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+}
+
+.mainBanner3Text {
+  width: 40vw;
+  margin-top: 10.2vw;
+}
+
+.rightBoxItem {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.mainBannerInnerImage3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.innerImgBox {
+  width: 595px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.imgBox1 {
+}
+
+.imgBox2 {
+  display: flex;
+  width: 493px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.imgBox3 {
+  display: flex;
+  width: 493px;
+  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.imgBox4 {
+}
+
+.imgOff {
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.imgOn {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: opacity 0.2;
+}
+
+.hoverBlock {
+  position: absolute;
+  z-index: 100;
+}
+
+.vertical {
+  width: 85px;
+  height: 273px;
+}
+
+.horizontal {
+  width: 500px;
+  height: 133px;
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) {
+  .mainBannerText1H3 {
+    font-size: 2.2vw;
+    font-weight: bold;
+    line-height: 2;
+  }
+
+  .mainBannerBtn > span {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 40%;
+    top: 0.8vw;
+  }
+
+  .mainBannerBtn:hover > .btnSpan {
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(10%);
+    top: 0.8vw;
+    margin-left: 40%;
+    font-size: 24px;
+    animation: modifyarrow 1s linear infinite;
+  }
+
+  .mainBannerInnerImage3 {
+    transform: scale(0.7);
+    margin-right: -60px;
+  }
+}
+
+.mainInnerBanner1 {
+  opacity: 1;
+}
+.mainInnerBanner2 {
+  opacity: 0;
+}
+.mainInnerBanner3 {
+  opacity: 0;
+}
+
+/* 왼쪽 화살표 */
+.arrowLeft::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(225deg);
+  margin: 0 -1vw;
+}
+
+/* 오른쪽 화살표 */
+.arrowRight::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+  margin: 0 88vw;
+}
