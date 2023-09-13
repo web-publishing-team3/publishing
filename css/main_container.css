@@ -1,0 +1,49 @@
+/* 메인 컨테이너 CSS */
+.mainContainer {
+  width: 100%;
+  height: 40vw;
+}
+
+.mainContainerCenter {
+  width: 100%;
+  display: flex;
+  padding: 0 9.5vw;
+  justify-content: space-between;
+}
+
+.innerLeft {
+  width: 40%;
+  padding-top: 120px;
+  margin-left: 5%;
+}
+
+.innerLeft > p {
+  font-size: 1.5vw;
+  margin-bottom: 25px;
+}
+
+.innerLeft > h3 {
+  font-size: 2.2vw;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.innerLeft > h3 > span {
+  color: #03c3fe;
+}
+
+.innerRight {
+  display: flex;
+  align-items: center;
+  margin-right: 4%;
+}
+
+.mainContainerImg {
+  width: 970px;
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) {
+  .mainContainerImg {
+    width: 56vw;
+  }
+}

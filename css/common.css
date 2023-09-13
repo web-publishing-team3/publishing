@@ -19,6 +19,10 @@ a {
   align-items: center;
   padding: 0 3.5vw;
   border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 /* 헤더 메뉴 */

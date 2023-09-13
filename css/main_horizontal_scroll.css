@@ -1,0 +1,32 @@
+/* 메인 횡 스크롤 이동 div CSS */
+
+.mainHorizontalScroll {
+  width: 100%;
+}
+
+.mainHorizonTop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHorizonTop h2 {
+  font-size: 42px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: center;
+}
+
+.horizonTopBtn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 60px;
+  width: 320px;
+  background: linear-gradient(to right, #03c3fe, #00a8ff);
+  border-radius: 100vw;
+  color: #fff;
+  margin-top: -10px;
+  margin-left: 100px;
+}
