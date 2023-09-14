@@ -1,3 +1,7 @@
+main {
+  margin-top: 4.2vw;
+}
+
 main > .topDiv {
   padding-top: 100px;
   padding-bottom: 20px;
@@ -10,7 +14,7 @@ main > .topDiv > .center > p {
 }
 
 main > .middleDiv > .center > .h3Div {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 main > .middleDiv > .center > .h3Div > h3 {
@@ -27,6 +31,10 @@ main > .middleDiv > .center > .tableDiv > table {
   width: 100%;
 }
 
+main > .middleDiv > .center > .tableDiv > table > tbody > tr > td:first-child {
+  width: 31%;
+}
+
 main > .middleDiv > .center > .tableDiv > table table {
   width: 100%;
   text-align: center;
@@ -39,6 +47,8 @@ main > .middleDiv > .center > .tableDiv > table table tr th {
   justify-content: flex-end;
   padding-bottom: 30px;
   font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid #aaa;
 }
 
 main > .middleDiv > .center > .tableDiv .thead tr th {
@@ -54,12 +64,40 @@ main > .middleDiv > .center > .tableDiv .thead tr td {
 
 main > .middleDiv > .center > .tableDiv > table table tr td {
   height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 main > .middleDiv > .center > .tableDiv > table table tr:nth-child(2n) td {
   background-color: #f8f8f8;
 }
 
+main > .middleDiv > .center > .tableDiv > table table tr:nth-child(5) td {
+  border-bottom: 2px solid #aaa;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr:nth-child(12) td {
+  border-bottom: 1px solid #aaa;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr:nth-child(17) td {
+  border-bottom: 2px solid #aaa;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr:last-child td {
+  background: none;
+}
+
+main > .middleDiv > .center > .tableDiv > table table tr:nth-child(13) td {
+  height: 88px;
+}
+
+.checkOn {
+  position: absolute;
+  opacity: 0;
+}
 /*--------underBox--------*/
 main > .underDiv {
   background-color: #f2f2f2;
