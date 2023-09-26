@@ -1,0 +1,47 @@
+main {
+  margin-top: 4.2vw;
+}
+
+/*--------topDiv--------*/
+main > .topDiv {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+main > .topDiv > .center > p {
+  color: #03c3fe;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*--------middleDiv--------*/
+main > .middleDiv > .center > h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5vw;
+}
+
+main > .middleDiv > .center > .big > h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 38px;
+}
+
+main > .middleDiv > .center > .big {
+  display: flex;
+  align-items: center;
+}
+
+main > .middleDiv > .center > .big > .right {
+  display: flex;
+}
+
+main > .middleDiv > .center p {
+  position: absolute;
+  z-index: 1;
+  font-weight: 700;
+}
+
+main > .middleDiv > .center img {
+  filter: drop-shadow(0px 4px 12px rgba(32, 32, 32, 0.1));
+}
